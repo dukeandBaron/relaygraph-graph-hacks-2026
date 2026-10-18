@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-10-18T13:58:30.047600+00:00",
+  "status": "PASS_LOCAL_FALKORDB_HTTP_BROWSER_FLOW_AND_MCP",
+  "source_unchanged_during_final_checks": true,
+  "sources": {
+    "compose.yaml": "a45bbe7d70403f04fee27552d9cc9ec4494d578573495856f2ec19b030ee4fce",
+    "mcp_stdio.py": "72bd1ccc6d4fd88dc632b9aab9654d8670adeb7476984b13ea8015e87fd8357d",
+    "relaygraph/__init__.py": "ff58a18fe8394ce05cf737d723dcbdb7f6c402da12aa86bd05276a0d6234e274",
+    "relaygraph/fixture.py": "caf588872f430de6fc18521a2050d072f3954176c69664fa85a1587037f0636d",
+    "relaygraph/queries.py": "b31d912fffae462f305ba10f3526e73ba90f98c37b64e47888362efd82f8dc88",
+    "relaygraph/store.py": "6c6362a6ace0f5839427bec9a4f95cf9276ca8782d76ac234cfbd23c0e875d54",
+    "relaygraph/web.py": "afb2db730f298dbd627848b0a8837618051fcc1b7a7d46110d485fba280d71e0",
+    "requirements.lock.txt": "a32763a42a70c4952c7fbce7cc3f7444b5e391fbb7c022b9adc4ab62f32a8c93",
+    "run.py": "3a0a0f77086da2aa3fc8db21676e982483e2e86e89eb2799228a324a0b64ed4b",
+    "tests/integration_graph.py": "5b066de1ba5537ba5a291c050c496ac8f6198c1d8e81ca16fbe3b80bc5e1cda3",
+    "tests/test_contracts.py": "867fa08100351b9996b0dca67abe9e3f8b4d3dc8940bb44a60430e96cd137336",
+    "web/app.js": "1db567c5e1027ccbbb485d332f7052daa8ad821f82b30298d45451edf2d8c021",
+    "web/graph-tools.css": "f8455f296caff66e9b49a8e9cd28588e76a0293da62d6acdeb92ab7b2b2cef55",
+    "web/index.html": "fd5984ca24d867bfa8b69b46a39c1f2ef088c9c8c76dc53c8c44e5ef98c4c89e",
+    "web/style.css": "f7523390b4c9552a657f93ea682780ebc22cdabee7861231077b58445f10f9a4"
+  },
+  "commands": [
+    {
+      "stage": "contracts",
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "stage": "real_graph",
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "stage": "real_http",
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "stage": "mcp_stdio",
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "stage": "javascript_syntax",
+      "exit": 0,
+      "passed": true
+    }
+  ],
+  "scopes": {
+    "contracts": "6 injected HTTP boundary and input-validation unit tests; no real database claim for this suite",
+    "real_graph": "5 tests against actual FalkorDB, no mocked graph",
+    "real_http": "6 real-controller and real-database checks",
+    "mcp": "5 actual stdio protocol checks, no model invoked",
+    "durability": "owned-container restart, real outage response, matching graph state hashes"
+  },
+  "browser_verified": [
+    "load_graph",
+    "impact_preview",
+    "input_change_invalidates_old_proposal",
+    "explicit_adoption",
+    "source_path_inspection",
+    "node_drag",
+    "zoom_and_fit"
+  ],
+  "browser_data": "synthetic_only",
+  "receipts": {
+    "graph": {
+      "file": "artifacts/integration_1792331906.json",
+      "sha256": "c0392c92bcb51d760ea515e80a4bd8fffb121a9feaf7c933c4a739b9a9ee4129"
+    },
+    "http": {
+      "file": "artifacts/http_acceptance_1792331908.json",
+      "sha256": "3dec4e26e812ed2087e6cd8ba85d2cf9384f824f20b5f3bbcef855ec10fe54e0"
+    },
+    "mcp": {
+      "file": "artifacts/mcp_acceptance_1792331909.json",
+      "sha256": "6bcc7066e1e36c9a23d03f5552702a08daecedeeb953e0fdfe75495a17a14fcc"
+    },
+    "durability": {
+      "file": "artifacts/durability_1792330661.json",
+      "sha256": "ab9a73d3ebe639c708be7e0a8cbd47bdf07795d0c13c5f7aa016d1bcefe26f8e"
+    }
+  },
+  "online_model_calls": 0,
+  "real_customer_users": 0,
+  "participant_technical_review": "PENDING_OWNER_VERIFICATION",
+  "contest_form_owner": "USER_WILL_FILL_AND_SUBMIT",
+  "official_submission_claimed": false
+}

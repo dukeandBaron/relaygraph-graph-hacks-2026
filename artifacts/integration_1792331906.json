@@ -1,0 +1,506 @@
+{
+  "actual_falkordb": true,
+  "run_id": "1792331906",
+  "tests": 5,
+  "failures": 0,
+  "errors": 0,
+  "mock_graph_used": false,
+  "online_model_calls": 0,
+  "events": [
+    {
+      "check": "test_adoption_and_restart_persistence",
+      "state": {
+        "initialized": true,
+        "workspace": "qa_1792331906_persist",
+        "graph": "relaygraph_68f014dfb09e7e2f",
+        "title": "Campus makers showcase",
+        "revision": 2,
+        "lastOperation": "persist_1792331906",
+        "nodes": [
+          {
+            "id": "accessibility",
+            "title": "Check accessible route in Room A",
+            "state": "current",
+            "kind": "Task",
+            "artifactKind": null
+          },
+          {
+            "id": "ack_accessibility",
+            "title": "Accessible route confirmed",
+            "kind": "Artifact",
+            "state": "confirmed",
+            "basisRevision": 1,
+            "artifactKind": "acknowledgement"
+          },
+          {
+            "id": "ack_catering",
+            "title": "Catering plan confirmed",
+            "kind": "Artifact",
+            "state": "needs_reconfirmation",
+            "basisRevision": 1,
+            "artifactKind": "acknowledgement"
+          },
+          {
+            "id": "ack_register",
+            "title": "Registration checklist confirmed",
+            "kind": "Artifact",
+            "state": "needs_reconfirmation",
+            "basisRevision": 1,
+            "artifactKind": "acknowledgement"
+          },
+          {
+            "id": "ack_travel",
+            "title": "Travel plan confirmed",
+            "kind": "Artifact",
+            "state": "needs_reconfirmation",
+            "basisRevision": 1,
+            "artifactKind": "acknowledgement"
+          },
+          {
+            "id": "catering",
+            "title": "Finalize catering after travel",
+            "state": "needs_review",
+            "kind": "Task",
+            "artifactKind": null
+          },
+          {
+            "id": "deadline",
+            "title": "Registration deadline",
+            "value": "2026-10-19T17:00:00+08:00",
+            "version": 2,
+            "kind": "Requirement",
+            "artifactKind": null
+          },
+          {
+            "id": "declaration",
+            "title": "Additional material",
+            "value": "Signed declaration",
+            "version": 2,
+            "kind": "Requirement",
+            "artifactKind": null
+          },
+          {
+            "id": "jules",
+            "title": "Jules",
+            "name": "Jules",
+            "synthetic": true,
+            "kind": "Person",
+            "artifactKind": null
+          },
+          {
+            "id": "kai",
+            "title": "Kai",
+            "name": "Kai",
+            "synthetic": true,
+            "kind": "Person",
+            "artifactKind": null
+          },
+          {
+            "id": "mina",
+            "title": "Mina",
+            "name": "Mina",
+            "synthetic": true,
+            "kind": "Person",
+            "artifactKind": null
+          },
+          {
+            "id": "noor",
+            "title": "Noor",
+            "name": "Noor",
+            "synthetic": true,
+            "kind": "Person",
+            "artifactKind": null
+          },
+          {
+            "id": "notice_v1",
+            "title": "Original notice · v1",
+            "body": "SYNTHETIC TEST NOTICE - Campus makers showcase. Registration closes 2026-10-20 18:00 Asia/Shanghai. Submit the registration form. Accessibility walkthrough remains in Room A. Not an actual event.",
+            "revision": 1,
+            "synthetic": true,
+            "kind": "SourceRevision",
+            "artifactKind": null
+          },
+          {
+            "id": "notice_v2",
+            "title": "Correction notice · v2",
+            "body": "SYNTHETIC CORRECTION - Registration closes 2026-10-19T17:00:00+08:00. Added material: Signed declaration. Room A remains unchanged. Not an actual event.",
+            "revision": 2,
+            "synthetic": true,
+            "kind": "SourceRevision",
+            "artifactKind": null
+          },
+          {
+            "id": "persist_1792331906",
+            "title": "Adopted notice correction",
+            "digest": "8c95f909ae69e4c13c9a11a892fd5355a0a290f49736b5471369f94668218bfd",
+            "revision": 2,
+            "proposal": "2614c0c28abd26fba0d507f529bedbce8bff77ce0f77c9d0c6a39b8fedf68a66",
+            "kind": "Operation",
+            "artifactKind": null
+          },
+          {
+            "id": "receipt_register",
+            "title": "SYNTHETIC registration receipt",
+            "kind": "Artifact",
+            "state": "needs_recheck",
+            "basisRevision": 1,
+            "artifactKind": "receipt"
+          },
+          {
+            "id": "register",
+            "title": "Register the showcase",
+            "state": "needs_review",
+            "kind": "Task",
+            "artifactKind": null
+          },
+          {
+            "id": "registration_form",
+            "title": "Registration form",
+            "value": "Registration form",
+            "version": 1,
+            "kind": "Requirement",
+            "artifactKind": null
+          },
+          {
+            "id": "review_catering",
+            "title": "Review changed requirements",
+            "state": "pending",
+            "reason": "[[\"catering\", \"travel\", \"register\", \"deadline\"]]",
+            "sourceIds": [
+              "notice_v1",
+              "notice_v2"
+            ],
+            "kind": "ReviewAction",
+            "artifactKind": null
+          },
+          {
+            "id": "review_register",
+            "title": "Review changed requirements",
+            "state": "pending",
+            "reason": "[[\"register\", \"deadline\"]]",
+            "sourceIds": [
+              "notice_v1",
+              "notice_v2"
+            ],
+            "kind": "ReviewAction",
+            "artifactKind": null
+          },
+          {
+            "id": "review_travel",
+            "title": "Review changed requirements",
+            "state": "pending",
+            "reason": "[[\"travel\", \"register\", \"deadline\"]]",
+            "sourceIds": [
+              "notice_v1",
+              "notice_v2"
+            ],
+            "kind": "ReviewAction",
+            "artifactKind": null
+          },
+          {
+            "id": "travel",
+            "title": "Confirm travel after registration",
+            "state": "needs_review",
+            "kind": "Task",
+            "artifactKind": null
+          },
+          {
+            "id": "venue",
+            "title": "Walkthrough venue",
+            "value": "Room A",
+            "version": 1,
+            "kind": "Requirement",
+            "artifactKind": null
+          }
+        ],
+        "edges": [
+          {
+            "source": "mina",
+            "type": "OWNS",
+            "target": "register"
+          },
+          {
+            "source": "noor",
+            "type": "OWNS",
+            "target": "travel"
+          },
+          {
+            "source": "kai",
+            "type": "OWNS",
+            "target": "accessibility"
+          },
+          {
+            "source": "jules",
+            "type": "OWNS",
+            "target": "catering"
+          },
+          {
+            "source": "deadline",
+            "type": "CITED_IN",
+            "target": "notice_v1"
+          },
+          {
+            "source": "deadline",
+            "type": "CITED_IN",
+            "target": "notice_v2"
+          },
+          {
+            "source": "registration_form",
+            "type": "CITED_IN",
+            "target": "notice_v1"
+          },
+          {
+            "source": "venue",
+            "type": "CITED_IN",
+            "target": "notice_v1"
+          },
+          {
+            "source": "register",
+            "type": "DEPENDS_ON",
+            "target": "deadline"
+          },
+          {
+            "source": "register",
+            "type": "DEPENDS_ON",
+            "target": "registration_form"
+          },
+          {
+            "source": "register",
+            "type": "DEPENDS_ON",
+            "target": "declaration"
+          },
+          {
+            "source": "travel",
+            "type": "DEPENDS_ON",
+            "target": "register"
+          },
+          {
+            "source": "catering",
+            "type": "DEPENDS_ON",
+            "target": "travel"
+          },
+          {
+            "source": "accessibility",
+            "type": "DEPENDS_ON",
+            "target": "venue"
+          },
+          {
+            "source": "ack_register",
+            "type": "FOR_TASK",
+            "target": "register"
+          },
+          {
+            "source": "receipt_register",
+            "type": "FOR_TASK",
+            "target": "register"
+          },
+          {
+            "source": "ack_travel",
+            "type": "FOR_TASK",
+            "target": "travel"
+          },
+          {
+            "source": "ack_catering",
+            "type": "FOR_TASK",
+            "target": "catering"
+          },
+          {
+            "source": "ack_accessibility",
+            "type": "FOR_TASK",
+            "target": "accessibility"
+          },
+          {
+            "source": "declaration",
+            "type": "CITED_IN",
+            "target": "notice_v2"
+          },
+          {
+            "source": "review_catering",
+            "type": "TARGETS",
+            "target": "catering"
+          },
+          {
+            "source": "review_register",
+            "type": "TARGETS",
+            "target": "register"
+          },
+          {
+            "source": "review_travel",
+            "type": "TARGETS",
+            "target": "travel"
+          },
+          {
+            "source": "persist_1792331906",
+            "type": "USED_SOURCE",
+            "target": "notice_v2"
+          }
+        ],
+        "synthetic": true,
+        "runtime": "deterministic graph policy; no online LLM"
+      },
+      "actions": [
+        {
+          "id": "review_catering",
+          "title": "Review changed requirements",
+          "state": "pending",
+          "task": "catering",
+          "taskTitle": "Finalize catering after travel",
+          "owner": "Jules",
+          "paths": [
+            [
+              "catering",
+              "travel",
+              "register",
+              "deadline"
+            ]
+          ],
+          "sourceIds": [
+            "notice_v1",
+            "notice_v2"
+          ]
+        },
+        {
+          "id": "review_register",
+          "title": "Review changed requirements",
+          "state": "pending",
+          "task": "register",
+          "taskTitle": "Register the showcase",
+          "owner": "Mina",
+          "paths": [
+            [
+              "register",
+              "deadline"
+            ]
+          ],
+          "sourceIds": [
+            "notice_v1",
+            "notice_v2"
+          ]
+        },
+        {
+          "id": "review_travel",
+          "title": "Review changed requirements",
+          "state": "pending",
+          "task": "travel",
+          "taskTitle": "Confirm travel after registration",
+          "owner": "Noor",
+          "paths": [
+            [
+              "travel",
+              "register",
+              "deadline"
+            ]
+          ],
+          "sourceIds": [
+            "notice_v1",
+            "notice_v2"
+          ]
+        }
+      ]
+    },
+    {
+      "check": "test_multihop_impact_and_unrelated_work",
+      "preview": {
+        "workspace": "qa_1792331906_paths",
+        "revision": 1,
+        "change": {
+          "deadline": "2026-10-19T17:00:00+08:00",
+          "material": "Signed declaration"
+        },
+        "tasks": [
+          "catering",
+          "register",
+          "travel"
+        ],
+        "artifacts": [
+          "ack_catering",
+          "ack_register",
+          "ack_travel",
+          "receipt_register"
+        ],
+        "proposal": "721477f0d7d722ff43fbec8d9f5a5d56f28675e9a063eb93a085c021d39f52fb",
+        "impacts": [
+          {
+            "task": "catering",
+            "title": "Finalize catering after travel",
+            "owner": "Jules",
+            "requirement": "deadline",
+            "path": [
+              "catering",
+              "travel",
+              "register",
+              "deadline"
+            ]
+          },
+          {
+            "task": "register",
+            "title": "Register the showcase",
+            "owner": "Mina",
+            "requirement": "deadline",
+            "path": [
+              "register",
+              "deadline"
+            ]
+          },
+          {
+            "task": "travel",
+            "title": "Confirm travel after registration",
+            "owner": "Noor",
+            "requirement": "deadline",
+            "path": [
+              "travel",
+              "register",
+              "deadline"
+            ]
+          }
+        ],
+        "affectedArtifacts": [
+          {
+            "id": "ack_catering",
+            "kind": "acknowledgement",
+            "title": "Catering plan confirmed",
+            "state": "confirmed",
+            "task": "catering",
+            "basisRevision": 1
+          },
+          {
+            "id": "ack_register",
+            "kind": "acknowledgement",
+            "title": "Registration checklist confirmed",
+            "state": "confirmed",
+            "task": "register",
+            "basisRevision": 1
+          },
+          {
+            "id": "ack_travel",
+            "kind": "acknowledgement",
+            "title": "Travel plan confirmed",
+            "state": "confirmed",
+            "task": "travel",
+            "basisRevision": 1
+          },
+          {
+            "id": "receipt_register",
+            "kind": "receipt",
+            "title": "SYNTHETIC registration receipt",
+            "state": "recorded",
+            "task": "register",
+            "basisRevision": 1
+          }
+        ],
+        "unaffectedTasks": [
+          "accessibility"
+        ],
+        "sourceIds": [
+          "notice_v1",
+          "notice_v2"
+        ],
+        "queries": {
+          "impact": "MATCH p=(t:Task)-[:DEPENDS_ON*1..6]->(r:Requirement)\nWHERE r.id IN $changed\nMATCH (person:Person)-[:OWNS]->(t)\nRETURN DISTINCT t.id,t.title,person.name,r.id,[n IN nodes(p) | n.id]\nORDER BY t.id",
+          "artifacts": "MATCH (a:Artifact)-[:FOR_TASK]->(t:Task)\nWHERE t.id IN $tasks\nRETURN a.id,a.kind,a.title,a.state,t.id,a.basisRevision\nORDER BY a.id"
+        },
+        "explanation": "The graph traverses dependency paths, prepares review actions for affected tasks, and preserves unrelated confirmations."
+      }
+    }
+  ]
+}

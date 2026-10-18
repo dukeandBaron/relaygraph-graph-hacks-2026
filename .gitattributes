@@ -1,0 +1,2 @@
+# Preserve byte identity between acceptance hashes and the published snapshot.
+* -text

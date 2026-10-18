@@ -1,0 +1,18 @@
+{
+  "actual_database_restart": true,
+  "owned_container": "relaygraph-20261018",
+  "container_ownership_label_verified": true,
+  "before_sha256": "cc6b79ec515b0cacc9b88b0096d9ce18c255d735147f29e4c286b14323f0e376",
+  "after_sha256": "cc6b79ec515b0cacc9b88b0096d9ce18c255d735147f29e4c286b14323f0e376",
+  "persistent_revision": 2,
+  "outage": {
+    "status": 503,
+    "body": {
+      "database": "unavailable",
+      "error": "FalkorDB did not respond. No substitute state was used.",
+      "fallback": false
+    }
+  },
+  "other_containers_modified": false,
+  "passed": 3
+}

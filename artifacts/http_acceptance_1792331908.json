@@ -1,0 +1,41 @@
+{
+  "workspace": "http_1792331908",
+  "real_http": true,
+  "real_falkordb": true,
+  "browser_clicks": false,
+  "online_model_calls": 0,
+  "passed": 6,
+  "results": [
+    {
+      "check": "empty_graph_not_fake_sample",
+      "status": 200
+    },
+    {
+      "check": "real_http_preview",
+      "tasks": [
+        "catering",
+        "register",
+        "travel"
+      ]
+    },
+    {
+      "check": "real_http_adoption",
+      "revision": 2
+    },
+    {
+      "check": "duplicate_command_not_repeated",
+      "duplicate": true
+    },
+    {
+      "check": "real_graph_source_trace",
+      "source_ids": [
+        "notice_v1",
+        "notice_v2"
+      ]
+    },
+    {
+      "check": "web_entry_served",
+      "status": 200
+    }
+  ]
+}

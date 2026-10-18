@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A graph-grounded agent that follows changed requirements to the work and evidence that need review.">
+  <title>RelayGraph — Follow the change</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/graph-tools.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="/" aria-label="RelayGraph home"><span class="mark" aria-hidden="true">↳</span> RelayGraph</a>
+    <span class="edition">GRAPH HACKS / 2026</span>
+    <div class="connection" id="connection" role="status">Connecting to graph…</div>
+    <button class="quiet" id="reload" type="button">Refresh</button>
+  </header>
+  <main>
+    <section class="intro">
+      <div><p class="eyebrow">A CHANGE NEVER STOPS AT ONE RECORD</p><h1>Follow the change.<br><em>Find the work that follows.</em></h1><p class="lede">Trace a revised requirement through tasks, owners and old confirmations. Review the exact path before the agent prepares the next steps.</p></div>
+      <div class="workspace-box"><label for="workspace">Workspace</label><div class="inline"><input id="workspace" value="demo" maxlength="32" autocomplete="off" spellcheck="false"><button class="quiet" id="open-workspace">Open</button></div><p>Each name opens a separate graph.</p><span class="synthetic">Synthetic activity & people</span></div>
+    </section>
+    <div id="error" class="error" role="alert" hidden></div>
+    <section class="desk" aria-label="Change response workspace">
+      <div class="graph-panel">
+        <div class="panel-head"><div><p class="eyebrow">CONNECTED CONTEXT</p><h2 id="graph-title">Your relationship map</h2></div><button id="seed" class="secondary" type="button">Load synthetic example</button></div>
+        <div class="graph-legend"><span><i class="dot source"></i>Source</span><span><i class="dot requirement"></i>Requirement</span><span><i class="dot task"></i>Task</span><span><i class="dot person"></i>Owner</span><span><i class="dot artifact"></i>Confirmation / receipt</span><div class="graph-tools"><button id="zoom-out" aria-label="Zoom out">−</button><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-fit" aria-label="Fit graph">Fit</button></div></div>
+        <div id="graph" class="graph" aria-label="Interactive relationship map"><div class="empty"><span class="empty-glyph">↳</span><h3>Start with a connected example.</h3><p>Load a fictional activity to follow a deadline change across three dependent tasks.</p></div></div>
+        <div class="graph-caption"><span id="graph-caption">Drag nodes to inspect the relationships. Select a task to see its sources.</span><span id="revision">No workspace loaded</span></div>
+      </div>
+      <aside class="inspector" aria-label="Prepare a correction">
+        <p class="eyebrow">NOTICE CORRECTION</p><h2>What changed?</h2><p class="subtle">The original notice closes registration on October 20 at 18:00. Try an earlier deadline and an extra document.</p>
+        <label for="deadline">New registration deadline</label><input type="datetime-local" id="deadline" value="2026-10-19T17:00"><span class="field-note">Beijing time · UTC+08:00</span>
+        <label for="material">Additional document</label><input id="material" value="Signed declaration" maxlength="100">
+        <button id="preview" class="primary" disabled>Trace the impact <span aria-hidden="true">↗</span></button>
+        <div id="preview-result" class="preview-result" aria-live="polite"></div>
+        <div id="adoption" hidden><label class="checkbox"><input type="checkbox" id="confirm"><span>I reviewed this exact correction and its affected work.</span></label><button id="adopt" class="primary" disabled>Adopt correction & prepare reviews</button></div>
+        <p class="fine">A graph policy agent prepares internal review tasks. It does not contact people or validate external receipts.</p>
+      </aside>
+    </section>
+    <section class="evidence-section">
+      <div class="section-header"><div><p class="eyebrow">EXPLAINABLE NEXT STEPS</p><h2 id="actions-heading">One change. A traceable response.</h2></div><button class="quiet" id="queries-toggle">Inspect the graph queries</button></div>
+      <div id="actions" class="actions"><div class="empty-note">Adopt a reviewed correction to create persistent review actions. Unrelated work stays current.</div></div>
+      <div id="evidence" class="evidence" hidden></div>
+      <div id="queries" class="queries" hidden><h3>The graph decides what is affected</h3><p>These are the named parameterized tools used by the application. No free-form query from the page is executed.</p><pre id="query-text"></pre></div>
+    </section>
+    <footer><span>Built during Graph Hacks · Agents That Act on Connected Data</span><span>AI-assisted development disclosed · Runtime: explicit graph policies, no online LLM</span></footer>
+  </main>
+</body>
+</html>
