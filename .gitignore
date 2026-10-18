@@ -17,4 +17,6 @@ artifacts/video_build/
 /scripts/start_verified_database.py
 /scripts/freeze_dependencies.py
 /scripts/publish_github.py
+/scripts/finalize_release.py
+/scripts/prepare_form_handoff.py
 /deliverables/*source*.zip

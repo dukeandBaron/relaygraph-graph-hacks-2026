@@ -22,6 +22,17 @@ people, organizations, notices and receipts in the demo are synthetic. A runtime
 policy decision is not represented as a language-model response or a human
 approval. The participant must personally understand and verify the submission.
 
+## Demo and submission copy
+
+- [Download the English working demo](deliverables/RelayGraph_working_demo_20261018.mp4) — 1 minute 27 seconds, edited actual UI captures with local synthesized narration.
+- [Copy-ready contest fields and Chinese instructions](docs/参赛表单填写内容.md).
+- [Versioned release and source archive](https://github.com/dukeandBaron/relaygraph-graph-hacks-2026/releases/tag/v1.0.0).
+
+The official form specifically requests a public or unlisted **YouTube** demo
+link. Downloading the MP4 from this repository is preparation; the participant
+uploads it to their YouTube channel and supplies the resulting link. This project
+does not claim that a GitHub MP4 URL satisfies the YouTube form requirement.
+
 ## Current readiness
 
 Working localhost prototype verified against real FalkorDB 4.22.1. The graph
